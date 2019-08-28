@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="    CRICKET_SCORE_KEEPER"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TEAM_A !"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/run_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUN:         0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InvalidId" />
+
+            <TextView
+                android:id="@+id/wicket_aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WICKET:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/over_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERS:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId,OnClick" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/six_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="basix"
+                    android:text="6"
+                    tools:ignore="DuplicateIds,OnClick" />
+
+                <Button
+                    android:id="@+id/four_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bafour"
+                    android:text="4"
+                    tools:ignore="DuplicateIds,OnClick" />
+
+                <Button
+                    android:id="@+id/three_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bathree"
+                    android:text="3"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/two_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="batwo"
+                    android:text="2"
+                    tools:ignore="DuplicateIds,OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="baone"
+                    android:text="1"
+                    tools:ignore="InvalidId,OnClick" />
+
+                <Button
+                    android:id="@+id/nbone_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="nbaone"
+                    android:text="NO @1"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/wone_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="waone"
+                    android:text="wide @1"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/exone_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exaone"
+                    android:text="bye @1"
+                    tools:ignore="InvalidId,OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/exthree_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exathree"
+                    android:text="bye @3"
+                    tools:ignore="InvalidId,OnClick" />
+
+                <Button
+                    android:id="@+id/exfour_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exafour"
+                    android:text="bye @4"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/extwo_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exatwo"
+                    android:text=" bye @2"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/over_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#E6E"
+                    android:onClick="overa"
+                    android:text="OVER"
+                    tools:ignore="DuplicateIds,OnClick" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/wicket_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF44"
+                android:onClick="wicketa"
+                android:text="WICKET"
+                tools:ignore="OnClick" />
+            <!--vishwas kumar  cse-b computerscience&engineering   vvvvvvvvvvvvvvvvvvvvvvvvhalfhalf-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TEAM_B ! !"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/run_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUN:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds,HardcodedText,InvalidId" />
+
+            <TextView
+                android:id="@+id/wicket_bb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WICKET:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/over_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERS:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId,OnClick" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/six_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bbsix"
+                    android:text="6"
+                    tools:ignore="DuplicateIds,OnClick" />
+
+                <Button
+                    android:id="@+id/four_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bbfour"
+                    android:text="4"
+                    tools:ignore="DuplicateIds,OnClick" />
+
+                <Button
+                    android:id="@+id/three_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bbthree"
+                    android:text="3"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/two_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bbtwo"
+                    android:text="2"
+                    tools:ignore="DuplicateIds,OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="bbone"
+                    android:text="1"
+                    tools:ignore="InvalidId,OnClick" />
+
+                <Button
+                    android:id="@+id/nbone_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="nbbone"
+                    android:text="NO @1"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/wone_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="wbone"
+                    android:text="wide @1"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/exone_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exbone"
+                    android:text="bye @1"
+                    tools:ignore="InvalidId,OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/exthree_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exbthree"
+                    android:text="bye @3"
+                    tools:ignore="InvalidId,OnClick" />
+
+                <Button
+                    android:id="@+id/exfour_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exbfour"
+                    android:text="bye @4"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/extwo_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:onClick="exbtwo"
+                    android:text=" bye @2"
+                    tools:ignore="DuplicateIds,OnClick" />
+
+                <Button
+                    android:id="@+id/over_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#E6E"
+                    android:onClick="overb"
+                    android:text="OVER"
+                    tools:ignore="DuplicateIds,OnClick" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/wicket_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF33"
+                android:onClick="wicketb"
+                android:text="WICKET"
+                tools:ignore="OnClick" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light">
+
+                <TextView
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="reset"
+                    android:text="RESET"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="InvalidId" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
